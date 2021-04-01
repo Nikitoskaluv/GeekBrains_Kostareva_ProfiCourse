@@ -147,6 +147,44 @@ hr {
 .dropdown_list_element{
     display: block;
 }
-.drop-down_content:hover .dropdown_list{
+.dropdown_list_element:hover {
     display: block;
 }
+.upper_banner{
+    height: 613px;
+    background-image: url(../img/banner_man_mainpage.png);
+    background-size: contain;
+    position: relative;
+}
+.text_vl{
+    max-width: 485px;
+    min-height: 92px;
+    border-left: 12px solid  #f16d7f;
+    position: absolute;
+    top: 224px;
+    padding-left: 12px;
+    
+    
+}
+.big_bold,
+.black_mini{
+    color: #222222;
+    font-family: "Lato", sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin:0;
+}
+.black_mini{
+letter-spacing: 1px;
+line-height: normal;
+font-size: 40px;
+}
+.pink_mini{
+    color:  #f16d7f;
+}
+
