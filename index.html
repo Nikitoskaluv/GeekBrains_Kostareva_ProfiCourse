@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style/normalize.css" type="text/css" />
     <link rel="stylesheet" href="style/style.css" type="text/css" />
+    <script src="https://use.fontawesome.com/e836e5b7f7.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
@@ -16,34 +17,34 @@
 <body>
     <header>
         <div class="container header_general">
-            <div class="left_part_header">
-                <a href="index.html"><img src="img/img_logo.svg" alt="logo">
-                </a>
-                <a href="index.html">
+                    <a href="index.html" class="left_part_header">
+                    <img src="img/img_logo.svg" alt="logo">
                     <p class="logo_inscription">bran<span class="pink_letter">d</span></p>
-                </a>
-                <div class="search_container">
-                    <form action="#">
-                        <select name="one" class="dropdown-select">
-                         <option value="">Browse</option>
-                         <option value="1"><a>Option #1</a></option>
-                         <option value="2"><a>Option #2</a></option>
-                         <option value="3">Option #3</option>
-                        </select>
-                        <input type="text" placeholder="Search for item..." name="search" class="search_form ">
-                        <button type="submit" class="icon_search"><img src="img/search.png"></button>
-                    </form>
-                </div>
-            </div>
-            <div class="right_part_header">
-                <a href="#"><img class="icon_cart" src="img/cart.svg" alt="cart"></a>
-                <select name="two" class="dropdown_account">
-                 <option value="">My Account</option>
-                 <option value="1"><a>Option #1</a></option>
-                 <option value="2"><a>Option #2</a></option>
-                 <option value="3">Option #3</option>
-                 </select>
-            </div>
+                    </a>
+                <div class="container_for_search">
+                    <div class="search_container">
+                        <form action="#">
+                            <select name="one" class="dropdown-select">
+                            <option value="">Browse</option>
+                            <option value="1"><a>Option #1</a></option>
+                            <option value="2"><a>Option #2</a></option>
+                            <option value="3">Option #3</option>
+                            </select>
+                            <input type="text" placeholder="Search for item..." name="search" class="search_form ">
+                            <button type="submit" class="icon_search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div> 
+                    <div class="right_part_header">
+                    <a href="#"><img class="icon_cart" src="img/cart.svg" alt="cart"></a>
+                    <select name="two" class="dropdown_account">
+                    <option value="">My Account</option>
+                    <option value="1"><a>Option #1</a></option>
+                    <option value="2"><a>Option #2</a></option>
+                    <option value="3">Option #3</option>
+                    </select>
+                    </div>
+                     
         </div>
     </header>
     <hr>
@@ -119,13 +120,51 @@
         </div>
         </div>
     </nav>
-    <div class="upper_banner">
+   <div class="upper_banner">
         <div class="container">
         <div class="text_vl">
         <p class="black_mini"><span class="big_bold">the brand</span><br> of luxerious<span class="pink_mini">fashion</span></p>
         </div>
-    </div>
-    </div>
+        </div>
+   </div>
+<div class="container">
+   <div class="flex_box_center">
+       <div class="right_part_center">
+           <div class="man">
+            <img src="img/center_man.png" class="img_pad larger_part" alt="man">
+            <div class="box_for_text">
+                <p class="black">hot deal <br><span class="pink">for men</span></p>
+            </div>
+            </div>
+            <div class="money">
+            <img src="img/center_money.png" alt="money" class="smaller_part">
+            <div class="box_for_text">
+                <p class="black">LUXIROUS & trendy <br><span class="pink">ACCESORIES</span></p>
+            </div>
+        </div>
+       </div>
+       <div class="left_part_center">
+           <div class="woman">
+            <img src="img/center_woman.png" alt="woman" class="img_pad smaller_part">
+            <div class="box_for_text">
+                <p class="black">30% offer<br><span class="pink">women </span></p>
+            </div>
+        </div>
+        <div class="kids">
+            <img src="img/center_kid.png" class="larger_part" alt="kid">
+            <div class="box_for_text">
+                <p class="black">new arrivals <br><span class="pink">for men</span>FOR kids</p>
+            </div>
+        </div>
+       </div>
+   </div>
+</div>
+<div class="goods_pallete">
+    <h3 class="title_palette">Fetured Items</h3>
+    <p class="text_palette">Shop for items based on what we featured in this week</p>
+</div>
+
+  
 
     
 </body>
