@@ -38,18 +38,19 @@
   padding: 0 10px 0 9px;
 }
 
-.browse_btn,
-.browse_btn:active,
-.browse_btn:focus {
+
+summary,
+summary:active,
+summary:focus{
   outline: none;
 }
-
 .fa-caret-down {
-  padding: 0 5px;
+  padding: 10px 5px;
+
 }
 
 .browse_mega-box {
-  display: none;
+  display: flex;
   flex-direction: column;
   border-radius: 5px;
   border: 1px solid #e8e8e8;
@@ -58,7 +59,7 @@
   position: absolute;
   z-index: +3;
   top: 69px;
-  margin-left: -10px;
+  
 
 }
 
@@ -70,7 +71,7 @@
   background-color: white;
   position: absolute;
   top: -7px;
-  left: 23px;
+  left: 60px;
   transform: rotate(45deg);
   border-left: 1px solid #e8e8e8;
   border-top: 1px solid #e8e8e8;
@@ -590,3 +591,9 @@ margin-top: 27px;
   line-height: normal;
   margin: 0;
 }
+.browse_btn {
+  display: flex;
+}
+ .browse_btn::-webkit-details-marker {
+  display: none;
+} 

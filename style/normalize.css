@@ -331,7 +331,7 @@ details {
  */
 
 summary {
-  display: list-item;
+  display: flex;
 }
 
 /* Misc
