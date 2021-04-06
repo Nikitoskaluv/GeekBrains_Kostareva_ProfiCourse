@@ -9,7 +9,6 @@
   padding-right: 36px;
 }
 
-
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -428,6 +427,7 @@ ul {
   padding-bottom: 8px;
   margin-bottom: 8px;
   margin-top: 0;
+  list-style-type: none;
 }
 
 li.list_mega-box {
@@ -699,14 +699,24 @@ li.list_mega-box {
 }
 
 .btn_on_transparent_lay,
-.btn_on_transparent_lay:active .btn_on_transparent_lay:focus {
+.btn_on_transparent_lay:active 
+.btn_on_transparent_lay:focus {
   outline: none;
+}
+
+.link_name_good{
+  color: #222222;
+  display: block;
+}
+.link_name_good:hover{
+  color: #f16d7f;
 }
 
 .small_cart {
   width: 23px;
   vertical-align: middle;
 }
+
 
 .browse_all_box {
   margin-top: 50px;
