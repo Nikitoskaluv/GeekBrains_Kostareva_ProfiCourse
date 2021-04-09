@@ -808,7 +808,7 @@ li.list_mega-box {
 .first_part_of_footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   height: 438px;
 }
 
@@ -917,7 +917,11 @@ li.list_mega-box {
   font-weight: 400;
   line-height: 54px;
 }
-
+.subscribe{
+  display: flex;
+    flex-direction: column;
+    margin-left: 92px;
+}
 .subscribe_btn {
   border-radius: 0 23px 23px 0;
   background-color: #f16d7f;
@@ -1211,6 +1215,17 @@ details[open] .summary_new_arrivals_page::after {
   line-height: 20px;
   color: #6f6e6e;
   text-transform: uppercase;
+  padding-right: 23px;
+}
+.size_label_non{
+  padding-right: 0;
+}
+
+.bigpadding_check{
+  padding-right: 39px;
+}
+.bigpadding_check_2{
+  padding-right: 24px;
 }
 
 .box_check {
@@ -1219,9 +1234,22 @@ details[open] .summary_new_arrivals_page::after {
   height: 13px;
   border-radius: 0;
 }
+.checkbox_box{
+  display: flex;
+    flex-wrap: wrap;
+    max-width: 235px;
+}
 .price {
   display: flex;
   justify-content: space-between;
+}
+.price_form{
+  display: flex;
+    flex-direction: column;
+
+}
+#price{
+  width:230px;
 }
 
 .sortByshowBy {
@@ -1229,6 +1257,7 @@ details[open] .summary_new_arrivals_page::after {
   flex-direction: row;
   margin: 10px;
 }
+
 .sortByshowBy:last-of-type {
   margin-left: 0;
 }
@@ -1250,6 +1279,7 @@ details[open] .summary_new_arrivals_page::after {
 }
 .lower_part_filter {
   background-color: #f3f3f3;
+  margin-top: 41px;
 }
 option {
   background-color: #ffffff;
