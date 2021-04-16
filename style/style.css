@@ -391,7 +391,7 @@ ul {
   color: #222222;
 }
 
-nav_element_man.headline_mega-box {
+.headline_mega-box {
   color: #232323;
   font-size: 14px;
   font-weight: 700;
@@ -416,6 +416,8 @@ li.list_mega-box {
 .mega_link {
   color: #646464;
   display: block;
+  text-transform: none;
+
 }
 
 .mega_link:hover {
@@ -1074,7 +1076,7 @@ li.list_mega-box {
 }
 .breadcrumbs_area {
   background-color: #f8f3f4;
-  padding: 65px 0;
+  height: 148px;
   margin-bottom: 59px;
 }
 .breadcrumbs_container {
@@ -1082,6 +1084,7 @@ li.list_mega-box {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 .breadcrumbs_title_link {
   color: #f16d7f;
@@ -1827,4 +1830,109 @@ input::-webkit-input-placeholder {
 }
 .like:hover{
   transform: scale(1.25);
+}
+
+/* 4 page */
+.name_section_checkout{
+color: #222222;
+font-size: 16px;
+font-weight: 700;
+text-transform: uppercase;
+margin: 27px 0;
+}
+.details_width{
+  width:100%;
+}
+.flex_for_details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 35px;
+}
+.name_section_checkout_box{
+  border-bottom: 1px solid  #e8e8e8;
+  width: 100%
+}
+.guest_or_register{
+color: #222222;
+font-size: 13px;
+font-weight: 400;
+text-transform: uppercase;
+}
+.clue_register{
+color: #b3b2b2;
+font-size: 13px;
+font-weight: 400;
+margin-top: 16px;
+}
+.guest_label,
+.register_label{
+color: #222222;
+font-size: 12px;
+font-weight: 400;
+text-transform: uppercase;
+}
+.red_asterisk{
+color: #ff0d0d;
+font-size: 17px;
+font-weight: 400;
+}
+.red_letters_checkout{
+color: #ff0d0d;
+font-size: 13px;
+font-weight: 400;
+margin-top: 16px;
+}
+.text_for_form_checkout{
+color: #222222;
+font-size: 12px;
+font-weight: 400;
+text-transform: uppercase;
+padding-bottom: 16px;
+}
+.text_for_form_checkout:last-of-type{
+  padding-top: 23px;
+}
+.black_letters_checkout{
+color: #222222;
+font-size: 14px;
+font-weight: 400;
+}
+.flex_right_part_btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+    align-items: baseline;
+}
+.form_boxes_checkout{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.radio_box{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.input_label_radio:first-of-type{
+  padding-bottom: 20px;
+}
+.clues_box{
+  padding-top: 20px;
+}
+.checkout_btn{
+color: #4a4a4a;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+border: 1px solid #eaeaea;
+background-color: #ffffff;
+}
+.border_form_checkout{
+  border: 1px solid #eaeaea;
+background-color: #ffffff;
+width:390px;
+height: 45px;
+}
+sup{
+  top: -0.005em;
 }
