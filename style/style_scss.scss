@@ -3,13 +3,21 @@
   }
   $pinkColor: #f16d7f;
 
+  @import"_footer.scss";
 
+  @mixin textStyle( $ff, $fw, $fs){
+  font-family:$ff;
+  font-weight: $fw;
+  font-size: $fs;
+  }
 
-  
+  .Font14px{
+    font-size: 14px;
+  }
+
   .logo_inscription {
     color: #222222;
-    font-size: 27px;
-    font-weight: 300;
+    @include textStyle( "Lato", 300, 27px);
     line-height: 32px;
     text-transform: uppercase;
     padding-left: 13px;
@@ -32,7 +40,7 @@
   
   .browse_btn {
     color: #222222;
-    font-size: 14px;
+    @extend .Font14px;
     font-weight: 300;
     line-height: 36px;
     letter-spacing: 0.35px;
@@ -101,7 +109,7 @@
     border: 1px solid #e6e6e6;
     height: 38px;
     width: 280px;
-    font-size: 14px;
+    @extend .Font14px;
     font-weight: 300;
     line-height: 32px;
     padding-left: 16px;
@@ -134,8 +142,7 @@
   .account {
     background-color: $pinkColor;
     color: #ffffff;
-    font-size: 15px;
-    font-weight: 400;
+    @include textStyle("Lato", 400, 15px);
     line-height: 32px;
     height: 38px;
     width: 130px;
@@ -216,8 +223,7 @@
   
   .price_mini_cart {
     color: $pinkColor;
-    font-size: 12px;
-    font-weight: 400;
+    @include textStyle("Lato", 400, 12px);
     text-transform: uppercase;
   }
   
@@ -252,7 +258,7 @@
     background-color: #ffffff;
     border: 1px solid $pinkColor;
     color: $pinkColor;
-    font-size: 14px;
+    @extend .Font14px;
     font-weight: 700;
     width: 225px;
     padding: 20px 0;
@@ -279,7 +285,7 @@
     background-color: #ffffff;
     border-radius: 5px;
     color: #4a4a4a;
-    font-size: 14px;
+    @extend .Font14px;
     font-weight: 700;
     width: 225px;
     padding: 20px 0;
@@ -343,7 +349,7 @@
   
   .nav_element {
     color: #222222;
-    font-size: 14px;
+    @extend .Font14px;
     font-weight: 700;
     line-height: 26px;
     list-style-type: none;
@@ -398,7 +404,7 @@
   
   .headline_mega-box {
     color: #232323;
-    font-size: 14px;
+    @extend .Font14px;
     font-weight: 700;
     line-height: 32px;
     text-transform: uppercase;
@@ -413,7 +419,7 @@
   li.list_mega-box {
     list-style-type: none;
     color: #646464;
-    font-size: 14px;
+    @extend .Font14px;
     font-weight: 400;
     line-height: 28px;
   }
@@ -661,7 +667,6 @@
     flex-direction: row;
     border: 1px solid #ffffff;
     color: #ffffff;
-    font-family: "Lato", sans-serif;
     font-size: 13px;
     font-weight: 700;
     background-color: transparent;
@@ -707,7 +712,6 @@
   .browse_all {
     background-color: $pinkColor;
     color: #ffffff;
-    font-family: "Lato", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 54px;
@@ -788,7 +792,7 @@
   
   .text_paragraph_lower_banner {
     color: #fbfbfb;
-    font-size: 14px;
+    @extend .Font14px;
     font-weight: 300;
     line-height: 24px;
     letter-spacing: 0.35px;
@@ -805,259 +809,7 @@
     margin-bottom: 30px;
   }
   
-  .long_banner {
-    position: relative;
-  }
   
-  .fade {
-    position: absolute;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 100%;
-  }
-  
-  .first_part_of_footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 438px;
-  }
-  
-  .picture_footer {
-    background-image: url(../img/img_footer.png);
-    width: 100%;
-    height: 438px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    position: relative;
-  }
-  
-  .transparent_lay_for_footer {
-    background-color: #f2f2f2;
-    position: absolute;
-    opacity: 0.5;
-    top: 0;
-    width: 100%;
-    height: 438px;
-  }
-  
-  .photo_recall {
-    border-radius: 100%;
-    width: 83px;
-    height: 83px;
-    margin-top: 111px;
-  }
-  
-  .block_text {
-    color: #222224;
-    font-family: "Lato", sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    letter-spacing: 0.4px;
-    line-height: 26px;
-    width: 386px;
-    margin-top: 123px;
-  }
-  
-  .name_quote {
-    color: $pinkColor;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0.4px;
-    line-height: 15px;
-    margin: 0;
-  }
-  
-  .place_recall {
-    color: #222224;
-    font-size: 12px;
-    font-weight: 300;
-    letter-spacing: 0.3px;
-    line-height: 14px;
-  }
-  
-  .subscribe_note {
-    text-align: center;
-    color: #222224;
-    font-size: 24px;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 44px;
-    letter-spacing: 0.6px;
-    margin: 148px 0 0 0;
-  }
-  
-  .smaller_note {
-    color: #222224;
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 0;
-    letter-spacing: 0.35px;
-    line-height: 4px;
-    margin: 0;
-  }
-  
-  .quote {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 75px;
-    border-right: 1px solid #ffffff;
-  }
-  
-  .text_quote {
-    margin-left: 28px;
-  }
-  
-  .input_field {
-    width: 282px;
-    height: 46px;
-    border-radius: 23px 0 0 23px;
-    background-color: #e1e1e1;
-    border-style: none;
-    padding-left: 28px;
-    opacity: 0.67;
-    color: #222224;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 54px;
-  }
-  .subscribe {
-    display: flex;
-    flex-direction: column;
-    margin-left: 92px;
-  }
-  .subscribe_btn {
-    border-radius: 0 23px 23px 0;
-    background-color: $pinkColor;
-    height: 48px;
-    color: #ffffff;
-    padding: 0 20px;
-    border: none;
-    font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    margin-left: -4px;
-    text-align: center;
-    letter-spacing: 0.35px;
-  }
-  
-  .subscribe_form {
-    margin-top: 35px;
-  }
-  
-  .subscribe_btn,
-  .subscribe_btn:active,
-  .subscribe_btn:focus,
-  .input_field,
-  .input_field:focus .input_field:active {
-    outline: none;
-  }
-  
-  .middle_part_of_footer {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 102px;
-  }
-  
-  .logo_two_paragraphs {
-    display: flex;
-    flex-direction: column;
-    max-width: 427px;
-  }
-  
-  .paragraph_footer {
-    margin-top: 14px;
-    color: #898989;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.35px;
-  }
-  
-  .info_footer {
-    list-style-type: none;
-  }
-  
-  .headline_footer {
-    color: $pinkColor;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-    text-transform: uppercase;
-  }
-  
-  .links_footer {
-    color: #898989;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.4px;
-    line-height: 59px;
-    line-height: 42px;
-  }
-  
-  .links_footer:hover {
-    color: $pinkColor;
-  }
-  
-  .lower_part_of_footer {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .social_media {
-    display: flex;
-  }
-  
-  .social_icon {
-    width: 32px;
-    height: 32px;
-    background-color: #ffffff;
-    margin: 24px 8px 24px 0;
-  }
-  
-  .social_icon:last-of-type {
-    margin-right: 0;
-  }
-  
-  .copyrights {
-    color: #7a7a7a;
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 42px;
-    letter-spacing: 0.4px;
-  }
-  
-  .background_footer {
-    background-color: #e6e6e6;
-    margin-top: 74px;
-  }
-  
-  .fa-social {
-    text-align: center;
-    padding: 8px;
-  }
-  
-  .social_icon:hover {
-    background-color: $pinkColor;
-  }
-  
-  .social_icon:hover .fa-social {
-    color: #ffffff;
-  }
-  
-  .shade_effect {
-    background-image: none;
-    width: 767px;
-    height: 529px;
-  }
-  
-  .shade_effect:hover {
-    background-image: url(../img/lower_banner_effect.png);
-  }
   .nav_element_man {
     border-bottom: 3px solid $pinkColor;
   }
@@ -1092,7 +844,7 @@
     display: flex;
     list-style-type: none;
     text-transform: uppercase;
-    font-size: 14px;
+    @extend .Font14px;
   }
   .link_bred {
     color: #636363;
@@ -1115,7 +867,7 @@
     z-index: 2;
     width: 243px;
     color: #6f6e6e;
-    font-size: 14px;
+    @extend .Font14px;
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
@@ -1182,7 +934,7 @@
   }
   .headline_section_filter {
     color: #6f6e6e;
-    font-size: 14px;
+    @extend .Font14px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 20px;
@@ -1199,7 +951,7 @@
   }
   .name_trend_link {
     color: #6f6e6e;
-    font-size: 14px;
+    @extend .Font14px;
     font-weight: 400;
     line-height: 0;
   }
@@ -1224,7 +976,7 @@
   }
   .size_label {
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+    @extend .Font14px;
     font-weight: 400;
     line-height: 20px;
     color: #6f6e6e;
@@ -1276,7 +1028,7 @@
   }
   .btnSortByShowBy,
   .selection {
-    font-size: 14px;
+    @extend .Font14px;
     font-weight: 400;
     color: #6f6e6e;
     line-height: 0;
@@ -1545,7 +1297,7 @@
   
   .text_good-info {
     color: #5e5e5e;
-    font-size: 14px;
+    @extend .Font14px;
     font-weight: 300;
     line-height: 24px;
     text-align: center;
@@ -1556,8 +1308,7 @@
   
   .title_material_designer {
     color: #b9b9b9;
-    font-family: Lato;
-    font-size: 14px;
+    @extend .Font14px;
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
@@ -1596,7 +1347,7 @@
   
   .title_choose {
     color: #2f2f2f;
-    font-size: 14px;
+    @extend .Font14px;
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
@@ -1896,7 +1647,7 @@
   }
   .black_letters_checkout{
   color: #222222;
-  font-size: 14px;
+  @extend .Font14px;
   font-weight: 400;
   margin-left: 32px;
   }
@@ -2075,7 +1826,7 @@
   }
   .btns_horizontal_block{
   color: #4a4a4a;
-  font-size: 14px;
+  @extend .Font14px;
   font-weight: 700;
   text-transform: uppercase;
   border: 1px solid #eaeaea;
@@ -2149,7 +1900,7 @@
   }
   .enter_clue{
   color: #000000;
-  font-size: 14px;
+  @extend .Font14px;
   font-weight: 300;
   margin-top: 28px;
   }
@@ -2235,7 +1986,8 @@
     width:38px;
     height: 4px;
     background-color: #d6d6d6;
-    margin-right: 13px;margin-top: 47px;
+    margin-right: 13px;
+    margin-top: 47px;
   }
   .slide_place_recall:hover{
     background-color: $pinkColor;
