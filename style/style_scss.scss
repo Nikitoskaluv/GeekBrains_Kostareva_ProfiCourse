@@ -46,6 +46,7 @@
     font-weight: 300;
     line-height: 36px;
     letter-spacing: 0.35px;
+    -webkit-border-radius:3px 0 0 3px;
     border-radius: 3px 0 0 3px;
     border: 1px solid #e6e6e6;
     background-color: #cdcdcc;
@@ -96,10 +97,7 @@
   .headline_link:hover {
     color: $pinkColor;
   }
-  
-  .browse_btn:hover .browse_mega-box {
-    display: flex;
-  }
+
   
   .form_search {
     display: flex;
@@ -122,14 +120,32 @@
   .cart_full {
     padding: 26px;
   }
+
   
   .cart_full:hover .cart_box {
     display: flex;
+    z-index: 3;
   }
   
   .fa {
     color: #989898;
   }
+  .social_icon{
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  -ms-transition: -ms-transform .8s ease-in-out;
+  -o-transition: -o-trasform .8s ease-in-out;
+  -moz-transition: -moz-transform .8s ease-in-out;
+
+  transition: transform .8s ease-in-out; 
+}
+  .social_icon:hover{
+   transform:rotate(45deg);
+   -ms-transform:rotate(45deg);
+   -webkit-transform:rotate(45deg);
+   -moz-transform: rotate(45deg);
+   -o-transform: rotate(45deg);
+}
+  
   
   .icon_search {
     background-color: #ffffff;
@@ -582,10 +598,53 @@
     background-color: #ffffff;
     top: 25px;
   }
-  .for_men:in-range {
 
-
+  @mixin transition( $property) {
+    transition: $property;
+    -webkit-transition: $property;
+    -moz-transition: $property;
+    -ms-transition: $property;
+    -o-transition: $property;
+    
   }
+   .for_men {
+    @include transition(transform linear .5s );
+   }
+
+@mixin transform($propertyTransform) {
+  transform:$propertyTransform ;
+    -webkit-transform: $propertyTransform;
+    -moz-transform: $propertyTransform;
+    -ms-transform: $propertyTransform;
+    -o-transform: $propertyTransform;
+}
+  .for_men:hover{
+    @include transform(matrix(1.1, 0, 0, 1.1, -25, -20));
+  }
+  
+  .smaller_part_money{
+    @include transition(transform linear .5s );
+  }
+  .smaller_part_money:hover{
+    @include transform(matrix(1.1, 0, 0, 1.1, -25, 10));
+  }
+  .for_kids{
+    @include transition(transform linear .5s );
+  }
+  .for_kids:hover{
+    @include transform(matrix(1.1, 0, 0, 1.1, 25,20));
+  }
+  .for_women{
+    @include transition(transform linear .5s );
+  }
+  .for_women:hover{
+    @include transform(matrix(1.1, 0, 0, 1.1, 25,-10));
+  }
+
+
+
+
+
   
   .black {
     color: #222222;
@@ -607,9 +666,19 @@
   
   .browse_btn {
     display: flex;
+    -webkit-box-sizing: border-box;
   }
   
   .browse_btn::-webkit-details-marker {
+    display: none;
+  }
+  .browse_btn::-moz-details-marker {
+    display: none;
+  }
+  .browse_btn::-ms-details-marker {
+    display: none;
+  }
+  .browse_btn::-o-details-marker {
     display: none;
   }
   
@@ -647,6 +716,10 @@
     text-transform: uppercase;
     padding: 0 0 20px 15px;
     margin: 0px;
+  }
+
+  .summary_new_arrivals_page::before {
+    display: none;
   }
   
   .good_card {
@@ -853,13 +926,13 @@
     text-transform: uppercase;
   }
   .breadcrumbs_title{
-    transition:margin-left 5s;
-    transition-timing-function: steps(3,end);
+    transition:margin-left 1s;
+    transition-timing-function: ease-in;
   }
+ 
   .breadcrumbs_title:hover{
-    align-items:center;
     margin-left: 100px;
-
+    transform: scale(2);
   }
 
   .breadcrumbs {
@@ -914,6 +987,9 @@
     position: absolute;
     right: 0;
     top: 19px;
+  }
+  .summary_new_arrivals_page::-webkit-details-marker{
+    display: none;
   }
   .fa_category {
     padding-right: 0px;
@@ -1212,8 +1288,82 @@
   .icon_lower_banner_benefits {
     width: 45px;
     height: 32px;
-    align-self: center;
+    // align-self: center;
   }
+@mixin animation-duration($anim-dur) {
+  animation-duration:($anim-dur);
+  -webkit-animation-duration:($anim-dur);
+  -moz-animation-duration:($anim-dur);
+  -o-animation-duration:($anim-dur);
+}
+@mixin animation-iteration-count($anim-it-count) {
+  animation-iteration-count:($anim-it-count);
+  -webkit-iteration-count:($anim-it-count);
+  -moz-iteration-count:($anim-it-count);
+  -o-iteration-count:($anim-it-count);
+}
+@mixin animation-delay($anim-del){
+  animation-delay:($anim-del);
+  -webkit-animation-delay:($anim-del);
+  -moz-animation-delay:($anim-del);
+  -o-animation-delay:($anim-del);
+}
+@mixin animation-direction($anim-dir) {
+  animation-direction:($anim-dir);
+  -webkit-animation-direction:($anim-dir);
+  -moz-animation-direction:($anim-dir);
+  -o-animation-direction:($anim-dir);
+}
+
+  .black_long_banner:hover .icon_lower_banner_benefits_car{
+    animation-name:icon_lower_banner_benefits_car ;
+    @include animation-duration(3s);
+    @include animation-delay(0);
+    @include animation-direction(alternate);
+    @include animation-iteration-count(2);
+  }
+    @keyframes icon_lower_banner_benefits_car{
+      from{
+        margin-left: 0%;
+        }
+      to{
+      margin-left: 100%;
+      }
+    }
+
+    .black_long_banner:hover .icon_lower_banner_benefits_percent{
+          animation-name:icon_lower_banner_benefits_percent ;
+          @include animation-duration(3s);
+          @include animation-delay(3s);
+          @include animation-iteration-count(2);
+          @include animation-direction(alternate);
+        }
+          @keyframes icon_lower_banner_benefits_percent{
+            from{
+             margin-left: 0%;
+              }
+            to{
+              margin-left: 100%;
+            }
+          }
+
+          .black_long_banner:hover .icon_lower_banner_benefits_crown{
+                  animation-name:icon_lower_banner_benefits_crown ;
+                  @include animation-duration(3s);
+                  @include animation-delay(6s);
+                  @include animation-iteration-count(2);
+                  @include animation-direction(alternate);
+                }
+                @keyframes icon_lower_banner_benefits_crown{
+                  from{
+                    margin-left: 0%;
+                     }
+                  to{
+                    margin-left: 100%;
+                  }
+              }
+                   
+
   .text_benefits {
     max-width: 320px;
     text-align: center;
@@ -1236,10 +1386,7 @@
   .breadcrumbs_area_single_page {
     margin: 0;
   }
-  .breadcrumbs_title_link:hover{
-  font-size: 30px;
-  
-  }
+ 
   .link_bred:hover{
     color: $pinkColor;
   }
@@ -1527,8 +1674,12 @@
     color:$pinkColor;
   }
   .cart_btn_box {
-    margin-right: 10px;
+    padding: 0 20px;
     align-self: center;
+    transition: transform ease-in .8s;
+  }
+  .btn_box:hover .cart_btn_box{
+    transform: translateX(26px);
   }
   .btn_box:hover {
     background-color:$pinkColor;
@@ -1537,6 +1688,8 @@
   .btn_box:hover .cart_btn_box {
     fill: #ffffff;
   }
+
+
   .title_like_also {
     color: #4d4d4d;
     font-size: 24px;
