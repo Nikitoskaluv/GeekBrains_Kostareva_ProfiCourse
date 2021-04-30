@@ -4,7 +4,7 @@
   $pinkColor: #f16d7f;
 
   @import"_footer.scss";
-  @import"_index_992.scss";
+ 
 
   @mixin textStyle( $ff, $fw, $fs){
   font-family:$ff;
@@ -53,6 +53,7 @@
     background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
     padding: 0 10px 0 9px;
   }
+
   
   summary,
   summary:active,
@@ -2184,4 +2185,5 @@
   .link_flex{
     display:flex;
   }
+  @import"_index_992.scss";
   
