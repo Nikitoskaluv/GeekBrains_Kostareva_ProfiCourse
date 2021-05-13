@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Index</title>
+  <title>Checkout</title>
   <link rel="stylesheet" href="style/normalize.css" type="text/css" />
   <link rel="stylesheet" href="style/style_scss.css" type="text/css" />
   <script src="https://use.fontawesome.com/e836e5b7f7.js"></script>
@@ -146,12 +146,8 @@
               <div class="total_word">Total</div>
               <div class="total_sum">&#36; 500</div>
             </div>
-            <a href="checkout_page.html">
-              <div><button class="checkout">Checkout</button></div>
-            </a>
-            <a href="shoping-cart.html">
-              <div><button class="go-to-cart">Go to cart</button></div>
-            </a>
+            <a href="checkout_page.html"><div><button class="checkout">Checkout</button></div></a>
+            <a href="shoping-cart.html"><div><button class="go-to-cart">Go to cart</button></div></a>
           </div>
         </div>
         <div>
@@ -166,7 +162,7 @@
   <nav class="nav_box">
     <ul class="navbar">
       <li class="nav_element">
-        <a href="#" class="menu_element">home</a>
+        <a href="index.html" class="menu_element">home</a>
         <div class="mega-box">
           <div class="mega_item">
             <h3 class="headline_mega-box">
@@ -349,7 +345,7 @@
           </div>
         </div>
       </li>
-      <li class="nav_element">
+      <li class="nav_element nav_element_man">
         <a href="#" class="menu_element">woman</a>
         <div class="mega-box">
           <div class="mega_item">
@@ -811,237 +807,125 @@
       </li>
     </ul>
   </nav>
-  <div class="upper_banner">
-    <div class="container">
-      <div class="text_vl">
-        <p class="black_mini">
-          <span class="big_bold">the brand</span><br />
-          of luxerious<span class="pink_mini">fashion</span>
-        </p>
+
+  <div class="breadcrumbs_area breadcrumbs_area_single_page">
+    <div class="breadcrumbs_container container">
+      <div class="breadcrumbs_title_box">
+        <a href="#" class="breadcrumbs_title_link">
+          <p class="breadcrumbs_title">New Arrivals</p>
+        </a>
+      </div>
+      <div class="breadcrumbs_box">
+        <ul class="breadcrumbs">
+          <li class="part_of_breadcrumbs">
+            <a class="link_bred" href="index.html">home</a>
+          </li>
+          <li class="part_of_breadcrumbs">
+            <a class="link_bred" href="page_2.html">men</a>
+          </li>
+          <li class="last_part_of_breadcrumbs">new arrivals</li>
+        </ul>
       </div>
     </div>
   </div>
   <div class="container">
-    <div class="flex_box_center">
-      <div class="right_part_center">
-        <a href="#">
-          <div class="box_center larger_part for_men">
-            <img src="img/center_man.png" class="img_pad " alt="man" />
-            <div class="box_for_text">
-              <p class="black">
-                hot deal <br /><span class="pink">for men</span>
-              </p>
-            </div>
+    <details class="details_width">
+      <summary class="name_section_checkout_box name_section_checkout">
+        01. Shipping address
+      </summary>
+      <div class="flex_for_details">
+        <div class="left_part_shipping_address">
+          <div class="text_register">
+            <p class="guest_or_register">Check as a guest or register</p>
+            <p class="clue_register">Register with us for future convenience</p>
           </div>
-        </a>
-        <a href="#">
-          <div class="box_center smaller_part_money">
-            <img src="img/center_money.png" alt="money" class="money" />
-            <div class="box_for_text">
-              <p class="black">
-                LUXIROUS & trendy <br /><span class="pink">ACCESORIES</span>
-              </p>
-            </div>
+          <div class="radio_check">
+            <form class="radio_box">
+              <div class="input_label_radio">
+                <input type="radio" id="guest" />
+                <label class="guest_label" for="guest">Checkout as guest</label>
+              </div>
+              <div class="input_label_radio">
+                <input type="radio" id="register" />
+                <label class="register_label" for="register">Register</label>
+              </div>
+            </form>
           </div>
-        </a>
-      </div>
-
-      <div class="left_part_center smaller_part ">
-        <a href="#">
-          <div class="box_center for_women">
-            <img src="img/center_woman.png" alt="woman" class="img_pad" />
-            <div class="box_for_text">
-              <p class="black">
-                30% offer<br /><span class="pink">women </span>
-              </p>
-            </div>
+          <div class="text_register">
+            <p class="guest_or_register">register and save time!</p>
+            <p class="clue_register">Register with us for future convenience</p>
           </div>
-        </a>
-        <a href="#">
-          <div class="box_center larger_part for_kids">
-            <img src="img/center_kid.png" alt="kid" />
-            <div class="box_for_text">
-              <p class="black">
-                new arrivals <br /><span class="pink">FOR kids</span>
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-  <section class="container">
-    <h3 class="title_palette">Fetured Items</h3>
-    <p class="text_palette">
-      Shop for items based on what we featured in this week
-    </p>
-    <div class="goods_pallete">
-      <div class="good_card">
-        <a class="link_good_card" href="single_page.html">
-          <img class="img_good_card" src="img/whiteTS.png" alt="img" />
-          <div>
-            <p class="name_good_card">Mango people t-shirt</p>
-            <p class="price_good_card">&#36;52.00</p>
-          </div>
-        </a>
-        <div class="btn_on_transparent_lay">
-          <a class="card_btn_link" href="#">
-            <img src="img/small_cart.svg" class="small_cart" alt="img" />
-            <p>Add to Cart</p>
-          </a>
-        </div>
-      </div>
-      <div class="good_card">
-        <a class="link_good_card" href="single_page.html">
-          <img class="img_good_card" src="img/koralBl.png" alt="img" />
-          <div>
-            <p class="name_good_card">Mango people t-shirt</p>
-            <p class="price_good_card">&#36;52.00</p>
-          </div>
-        </a>
-        <div class="btn_on_transparent_lay">
-          <a class="card_btn_link" href="#">
-            <img src="img/small_cart.svg" class="small_cart" alt="img" />
-            <p>Add to Cart</p>
-          </a>
-        </div>
-      </div>
-      <div class="good_card">
-        <a class="link_good_card" href="single_page.html">
-          <img class="img_good_card" src="img/blueJ.png" alt="img" />
-          <div>
-            <p class="name_good_card">Mango people t-shirt</p>
-            <p class="price_good_card">&#36;52.00</p>
-          </div>
-        </a>
-        <div class="btn_on_transparent_lay">
-          <a class="card_btn_link" href="#">
-            <img src="img/small_cart.svg" class="small_cart" alt="img" />
-            <p>Add to Cart</p>
-          </a>
-        </div>
-      </div>
-      <div class="good_card">
-        <a class="link_good_card" href="single_page.html">
-          <img class="img_good_card" src="img/whiteBl.png" alt="img" />
-          <div>
-            <p class="name_good_card">Mango people t-shirt</p>
-            <p class="price_good_card">&#36;52.00</p>
-          </div>
-        </a>
-        <div class="btn_on_transparent_lay">
-          <a class="card_btn_link" href="#">
-            <img src="img/small_cart.svg" class="small_cart" alt="img" />
-            <p>Add to Cart</p>
-          </a>
-        </div>
-      </div>
-      <div class="good_card">
-        <a class="link_good_card" href="single_page.html">
-          <img class="img_good_card" src="img/stripedBl.png" alt="img" />
-          <div>
-            <p class="name_good_card">Mango people t-shirt</p>
-            <p class="price_good_card">&#36;52.00</p>
-          </div>
-        </a>
-        <div class="btn_on_transparent_lay">
-          <a class="card_btn_link" href="#">
-            <img src="img/small_cart.svg" class="small_cart" alt="img" />
-            <p>Add to Cart</p>
-          </a>
-        </div>
-      </div>
-      <div class="good_card">
-        <a class="link_good_card" href="single_page.html">
-          <img class="img_good_card" src="img/grayC.png" alt="img" />
-          <div>
-            <p class="name_good_card">Mango people t-shirt</p>
-            <p class="price_good_card">&#36;52.00</p>
-          </div>
-        </a>
-        <div class="btn_on_transparent_lay">
-          <a class="card_btn_link" href="#">
-            <img src="img/small_cart.svg" class="small_cart" alt="img" />
-            <p>Add to Cart</p>
-          </a>
-        </div>
-      </div>
-      <div class="good_card">
-        <a class="link_good_card" href="single_page.html">
-          <img class="img_good_card" src="img/trousers.png" alt="img" />
-          <div>
-            <p class="name_good_card">Mango people t-shirt</p>
-            <p class="price_good_card">&#36;52.00</p>
-          </div>
-        </a>
-        <div class="btn_on_transparent_lay">
-          <a class="card_btn_link" href="#">
-            <img src="img/small_cart.svg" class="small_cart" alt="img" />
-            <p>Add to Cart</p>
-          </a>
-        </div>
-      </div>
-      <div class="good_card">
-        <a class="link_good_card" href="single_page.html">
-          <img class="img_good_card" src="img/blueSw.png" alt="img" />
-          <div>
-            <p class="name_good_card">Mango people t-shirt</p>
-            <p class="price_good_card">&#36;52.00</p>
-          </div>
-        </a>
-        <div class="btn_on_transparent_lay">
-          <a class="card_btn_link" href="#">
-            <img src="img/small_cart.svg" class="small_cart" alt="img" />
-            <p>Add to Cart</p>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="browse_all_box">
-      <a href="#">
-        <div class="browse_all">Browse All Product &rarr;</div>
-      </a>
-    </div>
-  </section>
-  <div class="lower_banner container">
-    <div class="shade_effect">
-      <p class="white_big">
-        30 &percnt; <span class="pink_big">offer</span><br /><span class="white_small">
-          for women</span>
-      </p>
-      <div class="right_part_lower_banner">
-        <div class="plate_lower_banner">
-          <img class="icon_lower_banner" src="img/car_icon.svg" alt="img" />
-          <div class="text_lower_banner">
-            <h3 class="headline_lower_banner">Free Delivery</h3>
-            <p class="text_paragraph_lower_banner">
-              Worldwide delivery on all. Authorit tively morph next-generation
-              innovation with extensive models.
+          <div class="clues_box">
+            <p class="clue_register">&raquo; Fast and easy checkout</p>
+            <p class="clue_register">
+              &raquo; Easy access to your order history and status
             </p>
           </div>
-        </div>
-        <div class="plate_lower_banner">
-          <img class="icon_lower_banner" src="img/percent_icon.svg" alt="img" />
-          <div class="text_lower_banner">
-            <h3 class="headline_lower_banner">Sales & discounts</h3>
-            <p class="text_paragraph_lower_banner">
-              Worldwide delivery on all. Authorit tively morph next-generation
-              innovation with extensive models.
-            </p>
+          <div class="checkout_btn">
+            <p>Continue</p>
           </div>
         </div>
-        <div class="plate_lower_banner">
-          <img class="icon_lower_banner" src="img/crown_icon.svg" alt="img" />
-          <div class="text_lower_banner">
-            <h3 class="headline_lower_banner">Quality assurance</h3>
-            <p class="text_paragraph_lower_banner">
-              Worldwide delivery on all. Authorit tively morph next-generation
-              innovation with extensive models.
-            </p>
+        <div class="right_part_shipping_address">
+          <div class="text_register">
+            <p class="guest_or_register">Already registed?</p>
+            <p class="clue_register">Please log in below</p>
+          </div>
+          <div class="email_form_checkout_box">
+            <form class="form_boxes_checkout">
+              <input type="email" id="email_checkout" class="border_form_checkout" autocomplete="on" required />
+              <label for="email_checkout" class="text_for_form_checkout">email address<sup
+                  class="red_asterisk">&#42;</sup></label>
+            </form>
+          </div>
+          <div class="password_form_checkout_box">
+            <form class="form_boxes_checkout">
+              <input type="password" id="password_checkout" class="border_form_checkout" autocomplete="on" required />
+              <label for="password_checkout" class="text_for_form_checkout">password<sup
+                  class="red_asterisk">&#42;</sup></label>
+            </form>
+          </div>
+          <div>
+            <p class="red_letters_checkout"><sup class="red_asterisk">&#42;</sup>Required Fields</p>
+          </div>
+          <div class="flex_right_part_btn">
+            <div class="checkout_btn">
+              <p>Log in</p>
+            </div>
+            <p class="black_letters_checkout">Forgot Password?</p>
           </div>
         </div>
       </div>
-    </div>
+    </details>
+    <details>
+      <summary class="name_section_checkout_box name_section_checkout">
+        02. BILLING INFORMATION
+      </summary>
+      <div class="flex_for_details"></div>
+    </details>
+    <details>
+      <summary class="name_section_checkout_box name_section_checkout">
+        03. SHIPPING INFORMATION
+      </summary>
+      <div class="flex_for_details"></div>
+    </details>
+    <details>
+      <summary class="name_section_checkout_box name_section_checkout">
+        04. SHIPPING METHOD
+      </summary>
+      <div class="flex_for_details"></div>
+    </details>
+    <details>
+      <summary class="name_section_checkout_box name_section_checkout">
+        05. PAYMENT METHOD
+      </summary>
+      <div class="flex_for_details"></div>
+    </details>
+    <details>
+      <summary class="name_section_checkout_box name_section_checkout">
+        06. ORDER REVIEW
+      </summary>
+      <div class="flex_for_details"></div>
+    </details>
   </div>
   <footer>
     <div class="long_banner">
@@ -1076,116 +960,116 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="middle_part_of_footer container">
-        <div class="logo_two_paragraphs">
-          <a href="index.html" class="logo logo_footer">
-            <img src="img/img_logo.svg" alt="logo" />
-            <p class="logo_inscription">
-              bran<span class="pink_letter">d</span>
-            </p>
-          </a>
-          <p class="paragraph_footer">
-            Objectively transition extensive data rather than cross functional
-            solutions. Monotonectally syndicate multidisciplinary materials
-            before go forward benefits. Intrinsicly syndicate an expanded array
-            of processes and cross-unit partnerships.
+    <div class="middle_part_of_footer container">
+      <div class="logo_two_paragraphs">
+        <a href="index.html" class="logo logo_footer">
+          <img src="img/img_logo.svg" alt="logo" />
+          <p class="logo_inscription">
+            bran<span class="pink_letter">d</span>
           </p>
+        </a>
+        <p class="paragraph_footer">
+          Objectively transition extensive data rather than cross functional
+          solutions. Monotonectally syndicate multidisciplinary materials
+          before go forward benefits. Intrinsicly syndicate an expanded array
+          of processes and cross-unit partnerships.
+        </p>
 
-          <p class="paragraph_footer">
-            Efficiently plagiarize 24/365 action items and focused
-            infomediaries. Distinctively seize superior initiatives for wireless
-            technologies. Dynamically optimize.
-          </p>
-        </div>
-        <div class="three_colums">
-          <h3 class="headline_footer">Company</h3>
-          <ul class="colums_footer">
-            <li class="info_footer">
-              <a class="links_footer" href="index.html">Home</a>
-            </li>
-            <li class="info_footer">
-              <a class="links_footer" href="#">Shop</a>
-            </li>
-            <li class="info_footer">
-              <a class="links_footer" href="#">About</a>
-            </li>
-            <li class="info_footer">
-              <a class="links_footer" href="#">How It Works</a>
-            </li>
-            <li class="info_footer">
-              <a class="links_footer" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="three_colums">
-          <h3 class="headline_footer">Information</h3>
-          <ul class="colums_footer">
-            <li class="info_footer">
-              <a class="links_footer" href="#">Tearms & Condition</a>
-            </li>
-            <li class="info_footer">
-              <a class="links_footer" href="#">Privacy Policy</a>
-            </li>
-            <li class="info_footer">
-              <a class="links_footer" href="#">How to Buy</a>
-            </li>
-            <li class="info_footer">
-              <a class="links_footer" href="#">How to Sell</a>
-            </li>
-            <li class="info_footer">
-              <a class="links_footer" href="#">Promotion</a>
-            </li>
-          </ul>
-        </div>
-        <div class="three_colums">
-          <h3 class="headline_footer">Shop Category</h3>
-          <ul class="colums_footer">
-            <li class="info_footer">
-              <a class="links_footer" href="#">Men</a>
-            </li>
-            <li class="info_footer">
-              <a class="links_footer" href="#"> Women</a>
-            </li>
-            <li class="info_footer">
-              <a class="links_footer" href="#">Child</a>
-            </li>
-            <li class="info_footer">
-              <a class="links_footer" href="#">Apparel</a>
-            </li>
-            <li class="info_footer">
-              <a class="links_footer" href="#">Brows All</a>
-            </li>
-          </ul>
-        </div>
+        <p class="paragraph_footer">
+          Efficiently plagiarize 24/365 action items and focused
+          infomediaries. Distinctively seize superior initiatives for wireless
+          technologies. Dynamically optimize.
+        </p>
       </div>
-      <div class="background_footer">
-        <div class="lower_part_of_footer container">
-          <div class="copyrights">
-            <p class="copyrights">&#169; 2017 Brand All Rights Reserved.</p>
+      <div class="three_colums">
+        <h3 class="headline_footer">Company</h3>
+        <ul class="colums_footer">
+          <li class="info_footer">
+            <a class="links_footer" href="index.html">Home</a>
+          </li>
+          <li class="info_footer">
+            <a class="links_footer" href="#">Shop</a>
+          </li>
+          <li class="info_footer">
+            <a class="links_footer" href="#">About</a>
+          </li>
+          <li class="info_footer">
+            <a class="links_footer" href="#">How It Works</a>
+          </li>
+          <li class="info_footer">
+            <a class="links_footer" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="three_colums">
+        <h3 class="headline_footer">Information</h3>
+        <ul class="colums_footer">
+          <li class="info_footer">
+            <a class="links_footer" href="#">Tearms & Condition</a>
+          </li>
+          <li class="info_footer">
+            <a class="links_footer" href="#">Privacy Policy</a>
+          </li>
+          <li class="info_footer">
+            <a class="links_footer" href="#">How to Buy</a>
+          </li>
+          <li class="info_footer">
+            <a class="links_footer" href="#">How to Sell</a>
+          </li>
+          <li class="info_footer">
+            <a class="links_footer" href="#">Promotion</a>
+          </li>
+        </ul>
+      </div>
+      <div class="three_colums">
+        <h3 class="headline_footer">Shop Category</h3>
+        <ul class="colums_footer">
+          <li class="info_footer">
+            <a class="links_footer" href="#">Men</a>
+          </li>
+          <li class="info_footer">
+            <a class="links_footer" href="#"> Women</a>
+          </li>
+          <li class="info_footer">
+            <a class="links_footer" href="#">Child</a>
+          </li>
+          <li class="info_footer">
+            <a class="links_footer" href="#">Apparel</a>
+          </li>
+          <li class="info_footer">
+            <a class="links_footer" href="#">Brows All</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="background_footer">
+      <div class="lower_part_of_footer container">
+        <div class="copyrights">
+          <p class="copyrights">&#169; 2017 Brand All Rights Reserved.</p>
+        </div>
+        <div class="social_media">
+          <div class="social_icon">
+            <a href="https://ru-ru.facebook.com/"><i class="fa fa-social fa-facebook" aria-hidden="true"></i></a>
           </div>
-          <div class="social_media">
-            <div class="social_icon">
-              <a href="https://ru-ru.facebook.com/"><i class="fa fa-social fa-facebook" aria-hidden="true"></i></a>
-            </div>
-            <div class="social_icon">
-              <a href="https://twitter.com/?lang=ru"><i class="fa fa-social fa-twitter" aria-hidden="true"></i></a>
-            </div>
-            <div class="social_icon">
-              <a href="https://ru.linkedin.com/"><i class="fa fa-social fa-linkedin" aria-hidden="true"></i></a>
-            </div>
-            <div class="social_icon">
-              <a href="https://www.pinterest.ru/"><i class="fa fa-social fa-pinterest-p" aria-hidden="true"></i></a>
-            </div>
-            <div class="social_icon">
-              <a href="https://myaccount.google.com/"><i class="fa fa-social fa-google-plus" aria-hidden="true"></i></a>
-            </div>
+          <div class="social_icon">
+            <a href="https://twitter.com/?lang=ru"><i class="fa fa-social fa-twitter" aria-hidden="true"></i></a>
+          </div>
+          <div class="social_icon">
+            <a href="https://ru.linkedin.com/"><i class="fa fa-social fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+          <div class="social_icon">
+            <a href="https://www.pinterest.ru/"><i class="fa fa-social fa-pinterest-p" aria-hidden="true"></i></a>
+          </div>
+          <div class="social_icon">
+            <a href="https://myaccount.google.com/"><i class="fa fa-social fa-google-plus" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
     </div>
-
   </footer>
+
 </body>
 
 </html>
